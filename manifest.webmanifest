@@ -1,0 +1,12 @@
+{
+  "name": "CL News Morning Brief",
+  "short_name": "CL News",
+  "description": "每日国际新闻音频晨报",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f7f2",
+  "theme_color": "#0f766e",
+  "lang": "zh-CN",
+  "orientation": "portrait"
+}

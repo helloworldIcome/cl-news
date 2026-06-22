@@ -1,0 +1,261 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f7f2;
+  --surface: #ffffff;
+  --ink: #17201f;
+  --muted: #5f6f6c;
+  --line: #dce4df;
+  --accent: #0f766e;
+  --accent-dark: #0b4f4a;
+  --accent-soft: #d8f1ed;
+  --warning: #8a5a00;
+  --disabled: #9aa7a3;
+  --radius: 8px;
+  --shadow: 0 18px 42px rgba(23, 32, 31, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bg);
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(15, 118, 110, 0.10), rgba(247, 247, 242, 0) 280px),
+    var(--bg);
+  font-family: Inter, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.app-shell {
+  width: min(100%, 760px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+}
+
+.briefing-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0 20px;
+}
+
+.kicker {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: clamp(2rem, 12vw, 3.8rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.status-pill {
+  flex: 0 0 auto;
+  margin: 2px 0 0;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.player-panel {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.overview {
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.voice-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.voice-button {
+  min-height: 48px;
+  padding: 8px 6px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #f8fbfa;
+  color: var(--ink);
+  font-size: 0.84rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.voice-button[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.voice-button:disabled {
+  color: var(--disabled);
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.play-button {
+  min-height: 58px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.play-button:disabled {
+  background: var(--disabled);
+  cursor: not-allowed;
+}
+
+.timeline {
+  min-width: 0;
+}
+
+progress {
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 999px;
+  background: #e4ebe8;
+}
+
+progress::-webkit-progress-bar {
+  background: #e4ebe8;
+}
+
+progress::-webkit-progress-value {
+  background: var(--accent);
+}
+
+progress::-moz-progress-bar {
+  background: var(--accent);
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.82rem;
+}
+
+.audio-state {
+  min-height: 22px;
+  margin: 14px 0 0;
+  color: var(--warning);
+  font-size: 0.88rem;
+}
+
+.news-section,
+.sources-section {
+  padding: 24px 0 0;
+}
+
+.news-list,
+.source-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.news-list li {
+  padding: 12px 0 12px 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-title {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 800;
+}
+
+.news-summary {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.news-tag {
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.source-list a {
+  color: var(--accent-dark);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+  .app-shell {
+    padding-inline: 12px;
+  }
+
+  .voice-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .play-button {
+    width: 100%;
+  }
+}

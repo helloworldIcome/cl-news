@@ -1,0 +1,86 @@
+{
+  "date": "2026-06-22",
+  "updatedAt": "07:12",
+  "state": "published",
+  "title": "CL News 晨报",
+  "overview": "安理会磋商中东局势、央行利率信号、AI基建投资、世界杯改制、电影节开幕。",
+  "defaultVoiceId": "cl-default",
+  "voices": [
+    {
+      "id": "cl-default",
+      "name": "小和(女声)",
+      "volcengineVoiceId": "replace-with-your-default-voice-id",
+      "available": true,
+      "audioUrl": "audio/2026-06-22/cl-default.mp3"
+    },
+    {
+      "id": "cl-voice-2",
+      "name": "娇喘女(女声)",
+      "volcengineVoiceId": "replace-with-your-second-voice-id",
+      "available": true,
+      "audioUrl": "audio/2026-06-22/cl-voice-2.mp3"
+    },
+    {
+      "id": "cl-voice-3",
+      "name": "志帅英姿(女声)",
+      "volcengineVoiceId": "replace-with-your-third-voice-id",
+      "available": true,
+      "audioUrl": "audio/2026-06-22/cl-voice-3.mp3"
+    },
+    {
+      "id": "cl-voice-4",
+      "name": "音色四",
+      "volcengineVoiceId": "replace-with-your-fourth-voice-id",
+      "available": false,
+      "audioUrl": ""
+    },
+    {
+      "id": "cl-voice-5",
+      "name": "音色五",
+      "volcengineVoiceId": "replace-with-your-fifth-voice-id",
+      "available": false,
+      "audioUrl": ""
+    }
+  ],
+  "items": [
+    {
+      "title": "国际安全局势继续牵动市场情绪",
+      "category": "国际",
+      "summary": "多个地区的外交和安全议题仍是今日硬新闻主线，能源、航运和避险资产价格可能继续受影响。"
+    },
+    {
+      "title": "主要经济体公布新一轮政策信号",
+      "category": "经济",
+      "summary": "央行表态、财政安排和贸易数据将影响全球资金流向，也会改变企业对下半年需求的判断。"
+    },
+    {
+      "title": "科技产业关注人工智能和芯片供应链",
+      "category": "科技",
+      "summary": "AI 基础设施、模型应用和半导体产能仍是跨国科技公司与监管机构共同关注的焦点。"
+    },
+    {
+      "title": "重大国际赛事进入关键阶段",
+      "category": "体育",
+      "summary": "体育新闻放在晨报后半段，只保留国际关注度高、对赛程或商业影响明显的事件。"
+    },
+    {
+      "title": "全球文化娱乐市场有新片和巡演动态",
+      "category": "文化",
+      "summary": "娱乐和文化消息作为轻量收尾，帮助晨练收听体验从硬新闻过渡到更放松的节奏。"
+    }
+  ],
+  "sources": [
+    {
+      "name": "BBC World",
+      "url": "https://www.bbc.com/news/world"
+    },
+    {
+      "name": "UN News",
+      "url": "https://news.un.org/"
+    },
+    {
+      "name": "France 24",
+      "url": "https://www.france24.com/en/"
+    }
+  ]
+}

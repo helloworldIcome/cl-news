@@ -1,0 +1,17 @@
+﻿# Secrets & config
+.env
+config.json
+
+# Python code
+generator/
+tests/
+__pycache__/
+*.pyc
+*.pyo
+*.py
+
+# Scripts
+generate.py
+schedule.ps1
+package.json
+other/

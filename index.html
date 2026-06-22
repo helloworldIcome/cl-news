@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0f766e">
+    <title>CL News Morning Brief</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="briefing-header" aria-labelledby="briefing-title">
+        <div>
+          <p class="kicker" id="briefing-date">加载中</p>
+          <h1 id="briefing-title">CL News</h1>
+        </div>
+        <p class="status-pill" id="run-state">同步中</p>
+      </section>
+
+      <section class="player-panel" aria-label="晨报播放器">
+        <p class="overview" id="briefing-overview">正在读取今日晨报。</p>
+        <div class="voice-row" id="voice-row" aria-label="音色选择"></div>
+        <div class="controls">
+          <button class="play-button" id="play-toggle" type="button" aria-label="播放或暂停">播放</button>
+          <div class="timeline">
+            <progress id="progress" value="0" max="100">0%</progress>
+            <div class="time-row">
+              <span id="current-time">00:00</span>
+              <span id="duration">--:--</span>
+            </div>
+          </div>
+        </div>
+        <p class="audio-state" id="audio-state">请选择音色后播放。</p>
+        <audio id="audio" preload="metadata"></audio>
+      </section>
+
+      <section class="news-section" aria-labelledby="news-heading">
+        <h2 id="news-heading">今日提要</h2>
+        <ol class="news-list" id="news-list"></ol>
+      </section>
+
+      <section class="sources-section" aria-labelledby="sources-heading">
+        <h2 id="sources-heading">来源</h2>
+        <ul class="source-list" id="source-list"></ul>
+      </section>
+    </main>
+    <script type="module" src="assets/app.js"></script>
+  </body>
+</html>
