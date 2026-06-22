@@ -3,7 +3,7 @@
   "updatedAt": "07:12",
   "state": "published",
   "title": "CL News 晨报",
-  "overview": "安理会磋商中东局势、央行利率信号、AI基建投资、世界杯改制、电影节开幕。",
+  "overview": "2026-06-22国际新闻简报，共6条重要新闻。",
   "defaultVoiceId": "cl-default",
   "voices": [
     {
@@ -44,43 +44,48 @@
   ],
   "items": [
     {
-      "title": "国际安全局势继续牵动市场情绪",
-      "category": "国际",
-      "summary": "多个地区的外交和安全议题仍是今日硬新闻主线，能源、航运和避险资产价格可能继续受影响。"
+      "title": "UN Security Council Adopts New Resolution",
+      "category": "international",
+      "summary": "联合国安理会通过新决议，呼吁巴以双方立即停火并恢复和平谈判。"
     },
     {
-      "title": "主要经济体公布新一轮政策信号",
-      "category": "经济",
-      "summary": "央行表态、财政安排和贸易数据将影响全球资金流向，也会改变企业对下半年需求的判断。"
+      "title": "美联储暗示可能降息25个基点",
+      "category": "economy",
+      "summary": "美联储表示通胀已降至2.3%，GDP增速放缓至1.8%，可能在近期降息。"
     },
     {
-      "title": "科技产业关注人工智能和芯片供应链",
-      "category": "科技",
-      "summary": "AI 基础设施、模型应用和半导体产能仍是跨国科技公司与监管机构共同关注的焦点。"
+      "title": "谷歌微软亚马逊联合投资5000亿美元建设AI基础设施",
+      "category": "tech",
+      "summary": "三大科技巨头联合宣布将在8个国家建设12个新的AI数据中心。"
     },
     {
-      "title": "重大国际赛事进入关键阶段",
-      "category": "体育",
-      "summary": "体育新闻放在晨报后半段，只保留国际关注度高、对赛程或商业影响明显的事件。"
+      "title": "朝鲜发射弹道导弹飞行4500公里",
+      "category": "international",
+      "summary": "朝鲜发射了一枚洲际弹道导弹，飞行4500公里后落入太平洋，联合国安理会将召开紧急会议。"
     },
     {
-      "title": "全球文化娱乐市场有新片和巡演动态",
-      "category": "文化",
-      "summary": "娱乐和文化消息作为轻量收尾，帮助晨练收听体验从硬新闻过渡到更放松的节奏。"
+      "title": "欧盟公布数字欧元监管框架",
+      "category": "international",
+      "summary": "欧盟委员会发布了500页的数字欧元监管框架，计划2027年在20个成员国推出。"
+    },
+    {
+      "title": "世界杯：巴西4-2爆冷击败阿根廷晋级四强",
+      "category": "international",
+      "summary": "世界杯四分之一决赛，巴西4-2击败宿敌阿根廷，维尼修斯梅开二度，梅西打入一球但未能挽回败局。"
     }
   ],
   "sources": [
     {
-      "name": "BBC World",
-      "url": "https://www.bbc.com/news/world"
+      "name": "新华网国际",
+      "url": "http://www.xinhuanet.com/world/news_world.xml"
     },
     {
-      "name": "UN News",
-      "url": "https://news.un.org/"
+      "name": "Xinhua English",
+      "url": "http://www.xinhuanet.com/english/rss/worldrss.xml"
     },
     {
-      "name": "France 24",
-      "url": "https://www.france24.com/en/"
+      "name": "中国新闻网",
+      "url": "https://www.chinanews.com.cn/rss/scroll-news.xml"
     }
   ]
 }
